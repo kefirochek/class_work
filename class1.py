@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/index/<title>')
 def index(title):
     user = "Ученик Яндекс.Лицея"
-    return render_template('index.html', title=title,
+    return render_template('base.html', title=title,
                            username=user)
 
 
